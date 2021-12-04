@@ -13,7 +13,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default () => {
     const [input, setInput] = useState<string>();
-    const route = `/searchVallet:${input}`
+    const route = `/searchWallet/:${input}`
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setInput(e.target.value)
