@@ -19,10 +19,6 @@ export default () => {
         setInput(e.target.value)
     }
 
-    const handleClick = () => {
-
-    }
-
     return (
         <Grid container direction="column" justifyContent="center" alignItems="center" minHeight="100vh">
             <Grid>
