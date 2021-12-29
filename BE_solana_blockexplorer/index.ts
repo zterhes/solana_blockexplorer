@@ -6,7 +6,7 @@ interface HealthCheckMessage{
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/healthCheck', (req, res) => {
     let response: HealthCheckMessage = {
         message:"Server is running"
     }
