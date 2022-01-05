@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import {
     Grid,
     Typography,
@@ -6,9 +6,10 @@ import {
     IconButton,
     TextField,
     Box,
-    Button
+    Button,
 } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
+import SolanaLogo from '../static/img/solanaLogo.svg'
 
 
 export default () => {
@@ -21,11 +22,11 @@ export default () => {
 
     return (
         <Grid container direction="column" justifyContent="center" alignItems="center" minHeight="100vh">
+            <img src={SolanaLogo}/>
             <Grid>
-                <Typography mt={2} variant="h1">Solana BlockExplorer</Typography>
+                <Typography mt={2} variant="h1">BlockExplorer</Typography>
             </Grid>
             <Box display="flex" justifyContent="center" alignItems="center">
-                {/* <TextField margin="normal" id="wallet_search" label="Find a wallet" variant="outlined"></TextField> */}
                 <TextField
                     margin="normal"
                     id="wallet_search"
