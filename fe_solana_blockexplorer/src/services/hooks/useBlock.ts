@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
 import { Connection, BlockResponse, clusterApiUrl } from "@solana/web3.js";
-import { BlockData } from "../../entities/Interfaces";
-import BlockDataContainer from "../../components/BlockDataContainer";
-
-const blockDataConverter = (fetchedData: any) => {};
 
 const useBlock = (blockNumber: number) => {
   const [blockData, setBlockData] = useState<BlockResponse>();
@@ -17,8 +13,8 @@ const useBlock = (blockNumber: number) => {
       }
     }
     fetch();
-    console.log(blockData)
   }, []);
+  return blockData;
 };
 
 export default useBlock;

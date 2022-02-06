@@ -11,8 +11,6 @@ const useBlocks = () => {
       const conn = new web3.Connection(web3.clusterApiUrl("devnet"));
       const slot = await conn.getSlot();
       const b = await conn.getBlocks(slot - 4);
-      const  blockData = await conn.getBlock(slot)
-      console.log(`blockData`, blockData)
       setBlocks(b);
     }
     fetchBlocks();
